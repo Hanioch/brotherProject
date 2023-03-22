@@ -1,0 +1,9 @@
+body{
+  background-color: rgb(37, 37, 37);
+  color: wheat;
+}
+
+.app{
+padding-left: 3rem;
+padding-right: 3rem;
+}

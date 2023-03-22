@@ -1,0 +1,26 @@
+.content-drag-drop{
+    padding-top: 2rem;
+    .drag-drop{
+        background-color: rgb(223, 223, 223);
+        color: black;
+        height: 20vh;
+        width: 20vw;
+        position: relative;
+      
+    }
+}
+
+
+.message-about-file{
+    text-align: center;
+
+&::after{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%,-50%);
+    
+}
+}

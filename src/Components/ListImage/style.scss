@@ -1,0 +1,18 @@
+
+.list-image-preview{
+// display: flex;
+// justify-content: space-evenly;
+    .elem-image-preview{
+        list-style: none;
+        .cross{
+            cursor: pointer;
+        }
+        .image-preview{
+            //ICI tu peux modifier la taille des images dans la Preview 
+            //( avant que les modifications ssoit faites, ça changera rien au rendu mais c'est plus beau )
+            height: 20vh;
+            
+        }
+    }
+}
+

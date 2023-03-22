@@ -1,0 +1,78 @@
+.text-delete-images{
+    cursor: pointer;
+    &:hover{
+        color: rgb(129, 110, 110);
+    }
+}
+
+
+.title-add-information{
+    text-align: center;
+}
+
+.content-input-label-number{
+    padding-bottom: 3rem;
+   font-size: 1.3em;
+}
+.text-before-drag-drop{
+    text-align: center;
+}
+
+ //---------- design input number -------------- 
+input[type="number"] {
+    appearance: none;
+    border: none;
+    background: none;
+    font-size: 1em;
+    width: 2.5em;
+    text-align: center;
+    color: wheat;
+    border-bottom: 2px solid rgb(129, 110, 110);
+    &:focus {
+        appearance: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: none;
+      };
+
+    &::-webkit-inner-spin-button, 
+      &::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        margin: 0; 
+      }
+  }
+  
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+// --------------------
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    .button-next-section{
+        background-color: wheat;
+        color: rgb(37, 37, 37);
+        width: 6rem;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        transition: ease-in 0.2s ;
+
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(166, 166, 133);
+        }
+        &:disabled{
+         background-color: rgb(223, 223, 223);
+        color: rgba(37, 37, 37, 0.461);
+        cursor: initial;
+     }
+    }
+    
+}

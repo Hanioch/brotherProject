@@ -1,0 +1,114 @@
+.image-modificator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .content-to-screen-and-download {
+    display: flex;
+    .list-download {
+      justify-self: self-end;
+      background-color: blue;
+      width: 20vw;
+      min-height: 20vh;
+      color: whitesmoke;
+      .elem-list-download{
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+  .content-to-screen {
+    //MODIFIE ICI la taille du caré noir  
+    height: 60vh;
+    width: 35vw;
+    border: solid black 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: aquamarine;
+
+    .text-arround-image {
+      height: 10vh;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .elem-before-image {
+      height: 30%;
+      width: 40%;
+    }
+    .elem-and-line {
+      position: relative;
+
+      .elem {
+        position: absolute;
+        background-color: black;
+      }
+
+      .elem-0 {
+        z-index: 0;
+        width: 100%;
+        background-color: aquamarine;
+        border: none;
+        height: 1px;
+        margin-top: 8px;
+        // border-bottom: solid 1px aquamarine;
+      }
+
+      .elem-1 {
+        z-index: 1;
+        left: 0;
+        padding-right: 5px;
+      }
+
+      .elem-2 {
+        z-index: 2;
+        right: 0;
+        padding-left: 5px;
+      }
+    }
+    .image-modificator-content {
+      //MODIFIE ICI LA TAILLE DE Limage finale
+      position: relative;
+      // width: 30vw;
+      height: 30vh;
+      .rec {
+        position: absolute;
+        z-index: 2;
+        display: inline-block;
+        color: rgb(189, 189, 189);
+      }
+      .rectangle1 {
+        border-top: 30px solid;
+        border-right: 30px solid transparent;
+      }
+      .rectangle2 {
+        right: 0;
+        border-bottom: 30px solid transparent;
+        border-right: 30px solid;
+      }
+      .rectangle3 {
+        bottom: 0;
+        left: 0;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid;
+      }
+      .rectangle4 {
+        bottom: 0;
+        right: 0;
+        border-left: 30px solid transparent;
+        border-bottom: 30px solid;
+      }
+      .image-need-change {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
